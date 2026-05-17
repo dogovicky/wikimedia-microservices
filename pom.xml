@@ -15,6 +15,7 @@
 	<name>Wikimedia-Microservices</name>
 	<modules>
 		<module>Wikimedia Producer</module>
+		<module>Wikimedia Consumer</module>
 	</modules>
 	<packaging>pom</packaging>
 	<description>A simple Wikimedia Streaming microservice platform</description>
