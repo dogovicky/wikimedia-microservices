@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Wikimedia Producer
+
+  kafka:
+    producer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        enable:
+          idempotence: false
+        max:
+          block:
+            ms: 5000
+        request:
+          timeout:
+            ms: 5000
+
+logging:
+  level:
+    com:
+      launchdarkly=DEBUG:
+
+
+
